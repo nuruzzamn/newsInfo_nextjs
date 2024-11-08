@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      margin: {
+        "-10": "-10px", // Adds a new margin value
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
