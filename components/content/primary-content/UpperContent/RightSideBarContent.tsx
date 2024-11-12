@@ -57,6 +57,13 @@ const RightSideBarContent: React.FC = () => {
           <BottomTopStories stories_2={top_stories_2} />
         </div>
       </div>
+
+      <div>
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
+      </div>
     </div>
   );
 };

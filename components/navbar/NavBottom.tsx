@@ -5,7 +5,7 @@ import React from "react";
 
 const NavBottom = () => {
   return (
-    <div className="flex mt-2clear">
+    <div className="flex ">
       {/* left section with 25% */}
       <div className="flex basis-1/4 justify-start pl-2">
         <div className="border-l-2 border-gray-300 h-full"></div>
