@@ -1,7 +1,7 @@
-import DownArrow from "@/components/icons/DownArrow";
 import Line3 from "@/components/icons/Line3";
 import Search from "@/components/icons/Search";
 import React from "react";
+import { DownArrow } from "../Icons";
 
 const NavBottom = () => {
   return (
