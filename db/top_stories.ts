@@ -72,8 +72,21 @@ const top_stories_2: Story_2[] = [
   },
 ];
 
+const politics_post: Story_2[] = [
+  {
+    serial_number: "1",
+    title: "Awersing Instagram tawo promote your",
+    date: "27 August, 2024",
+  },
+  {
+    serial_number: "2",
+    title: "Rethinking Star Ratings For Readers",
+    date: "27 August, 2024",
+  },
+]
+
 // top stories 1 data default export
 export default top_stories_1;
 
 // top stories 2 data name export
-export { top_stories_2 };
+export { top_stories_2, politics_post };

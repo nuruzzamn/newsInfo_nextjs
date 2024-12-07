@@ -177,6 +177,71 @@ export const Clock: React.FC = () => (
   </svg>
 );
 
+// LongBorder
+export const LongBorder: React.FC = () => (
+  <svg
+    width="865"
+    height="7"
+    viewBox="0 0 865 7"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask id="path-1-inside-1_4_4613" fill="white">
+      <path d="M0.0800781 1.37988H865V6.37988H0.0800781V1.37988Z" />
+    </mask>
+    <path
+      d="M0.0800781 2.37988H865V0.379883H0.0800781V2.37988ZM865 5.37988H0.0800781V7.37988H865V5.37988Z"
+      fill="#DFDFDF"
+      mask="url(#path-1-inside-1_4_4613)"
+    />
+    <rect x="0.0800781" y="1.37988" width="40" height="5" fill="#F4796C" />
+    <mask
+      id="mask0_4_4613"
+      maskUnits="userSpaceOnUse"
+      x="36"
+      y="0"
+      width="11"
+      height="7"
+    >
+      <g clip-path="url(#clip0_4_4613)">
+        <path
+          d="M40.0801 0.879883H46.0801L42.0801 6.87988H36.0801L40.0801 0.879883Z"
+          fill="black"
+        />
+      </g>
+    </mask>
+    <g mask="url(#mask0_4_4613)">
+      <rect x="36.0801" y="0.879883" width="10" height="6" fill="white" />
+    </g>
+    <defs>
+      <clipPath id="clip0_4_4613">
+        <rect
+          width="10"
+          height="6"
+          fill="white"
+          transform="translate(36.0801 0.879883)"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+// UpperArrow
+export const UpperArrow: React.FC = () => (
+  <svg
+    width="11"
+    height="11"
+    viewBox="0 0 11 11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.95778 10.7799L0.880859 9.70299L8.26548 2.31837H1.65009V0.779907H10.8809V10.0107H9.3424V3.39529L1.95778 10.7799Z"
+      fill="#F4796C"
+    />
+  </svg>
+);
+
 const Icons = {
   Calender,
   SignIn,
@@ -184,6 +249,8 @@ const Icons = {
   Line3,
   Search,
   Clock,
+  LongBorder,
+  UpperArrow,
 };
 
 export default Icons;

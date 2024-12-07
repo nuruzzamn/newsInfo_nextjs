@@ -1,22 +1,31 @@
 import React from "react";
 import Image from "next/image";
 import content_tech_image from "@/public/content-tech.jpg";
+import politics_post1 from "@/public/content/politics_post01.jpg";
 import main_hero_content_img from "@/public/main-hero-content-img.jpg";
 import content_business_image from "@/public/content-business.jpg";
 import advertisingTravelAgency from "@/public/content/advertisement.jpg.jpg";
-import { Calender, Clock, SignIn } from "@/components/Icons";
+import {
+  Calender,
+  Clock,
+  LongBorder,
+  SignIn,
+  UpperArrow,
+} from "@/components/Icons";
 import top_stories_1 from "@/db/top_stories";
-import { top_stories_2 } from "@/db/top_stories";
+import { top_stories_2, politics_post } from "@/db/top_stories";
 import Border_line from "@/public/Border.jpg";
 import side_bar_image from "@/public/content/sidebar_img05.jpg";
+import Link from "next/link";
 
 const UpperContent = () => {
   return (
     <>
       {/* main content  */}
       <div className="flex">
+        {/* Left section:left sidebar and hero content 75% */}
         <section>
-          {/* Left section:left sidebar and hero content 75% */}
+          {/* Tag:left sidebar and hero content */}
           <div className="basis-3/4 flex mb-4 h-auto">
             {/* Tag: Left side bar */}
             <div className="basis-2/6 flex flex-col border-r-2 border-gray-300">
@@ -111,7 +120,7 @@ const UpperContent = () => {
                   className="w-full"
                 />
 
-                <button className="w-20 h-6 bg-transparent border border-gray-300 rounded my-6">
+                <button className="w-20 h-6 bg-transparent border text-gray-600 border-gray-300 rounded my-6">
                   Politics
                 </button>
 
@@ -153,140 +162,238 @@ const UpperContent = () => {
             </div>
           </div>
           {/* Tag: advertisement for travel agency */}
-          <div>
+          <Link href="">
             <Image
               src={advertisingTravelAgency}
               alt="Business"
               width={288}
               height={180}
-              className="w-full pr-6 pl-4"
+              className="w-full px-4 py-12"
               priority
             />
-          </div>
-        </section>
+          </Link>
 
-        {/* Right section: Right sidebar top stories */}
-        <div className="basis-1/4">
-          {/* <RightSideBarContent /> */}
-          <div className="px-4 mt-10 border-l-2 border-gray-300">
-            {/* Top section: Head line with title and all stories */}
-            <div className="-translate-y-[6px]">
-              <Image
-                src={Border_line}
-                alt="Top stories"
-                width={290}
-                height={5}
-                className="w-full"
-              />
+          {/* Tag: Politics  */}
+          <div className="px-4">
+            {/* Title and title divider line  */}
+            <div className="flex gap-2 items-center py-5">
+              <h1 className="text-2xl font-semibold text-custommBlue">
+                Politics
+              </h1>
+              <div className="">
+                <LongBorder />
+              </div>
+            </div>
+            {/* content body  */}
+            <div className="flex justify-between gap-6">
+              {/* image  */}
+              <div>
+                <Image
+                  src={politics_post1}
+                  alt="post1"
+                  width={350}
+                  height={400}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
 
-              <h4 className="text-2xl font-semibold text-custommBlue mt-4">
-                Top Stories
-              </h4>
+              {/* post details  */}
+              <div className="border-r-2">
+                <h1 className="text-sm font-semibold text-gray-400">
+                  Politics
+                </h1>
+                <h2 className="text-xl font-bold text-custommBlue pt-1">
+                  Warns Financial Institutions to be on Watch for Russian
+                </h2>
+                {/* post author details  */}
+                <div className="flex gap-5 items-center py-2">
+                  <div className="flex gap-3 items-center">
+                    <SignIn />
+                    <h1 className="text-sm text-gray-500">BY ADMIN</h1>
+                  </div>
+                  <div className="flex gap-3 items-center">
+                    <Calender />
+                    <h1 className="text-sm text-gray-500">27 August, 2024</h1>
+                  </div>
+                </div>
 
-              {/* Props drilling for all stories */}
-              <div className="mt-5">
+                <h2 className="text-sm text-gray-600">
+                  Browned butter browa melly ness crispy edgend software centers
+                  puddles of chocolate.
+                </h2>
+
+                <div className="pt-4">
+                  <button className="py-2 px-3 border border-gray-400 rounded-lg  text-sm text-gray-600 flex items-center gap-3">
+                    Read more
+                    <span>
+                      <UpperArrow />
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {/* others post title  */}
+              <div>
                 {
                   <div>
-                    {top_stories_1.map((story, index) => (
+                    {politics_post.map((story, index) => (
                       <div
                         key={index}
-                        className={`flex justify-center items-center pb-8 mb-4 ${
-                          index !== top_stories_1.length - 1
+                        className={`flex ${
+                          index !== politics_post.length - 1
                             ? "border-b-2 border-gray-300"
-                            : ""
+                            : "pt-3"
                         }`}
                       >
                         {/* Left content */}
-                        <div className="basis-3/4">
-                          <p className="text-base font-bold text-gray-400">
+                        <div className="">
+                          <p className="text-lg font-bold text-custommBlue">
                             {story.title}
                           </p>
-                          <p className="text-lg font-bold text-custommBlue mt-1">
-                            {story.des}
-                          </p>
-                          <div className="flex gap-2 items-center mt-1">
+                          <div className="flex gap-2 py-3">
                             <Calender />
                             <p className="text-xs font-thin text-gray-400">
                               {story.date}
                             </p>
                           </div>
                         </div>
-
-                        {/* Right image content */}
-                        <div className="basis-1/4 flex justify-center items-center">
-                          <Image
-                            src={story.Image}
-                            alt={story.title}
-                            width={150}
-                            height={150}
-                            className="rounded-full"
-                          />
-                        </div>
                       </div>
                     ))}
                   </div>
                 }
               </div>
-              {/* Advisement image  */}
-              <div className="flex justify-center">
+            </div>
+          </div>
+
+          {/* Tag: Politics  */}
+
+        </section>
+
+        {/* Right section: Right sidebar top stories */}
+        <section>
+          <div className="basis-1/4 w-full">
+            {/* <RightSideBarContent /> */}
+            <div className="px-4 mt-10 border-l-2 border-gray-300">
+              {/* Top section: Head line with title and all stories */}
+              <div className="-translate-y-[6px]">
                 <Image
-                  src={side_bar_image}
-                  alt="Business"
+                  src={Border_line}
+                  alt="Top stories"
                   width={290}
-                  height={236}
-                  className="items-center"
+                  height={5}
+                  className="w-full"
                 />
-              </div>
 
-              {/* Bottom section: Head line with title and all stories */}
+                <h1 className="text-2xl font-semibold text-custommBlue mt-4">
+                  Top Stories
+                </h1>
 
-              <Image
-                src={Border_line}
-                alt="Top stories"
-                width={290}
-                height={5}
-                className="w-full mt-10"
-              />
+                {/* Props drilling for all stories */}
+                <div className="mt-5">
+                  {
+                    <div>
+                      {top_stories_1.map((story, index) => (
+                        <div
+                          key={index}
+                          className={`flex justify-center items-center pb-8 mb-4 ${
+                            index !== top_stories_1.length - 1
+                              ? "border-b-2 border-gray-300"
+                              : ""
+                          }`}
+                        >
+                          {/* Left content */}
+                          <div className="basis-3/4">
+                            <p className="text-base font-bold text-gray-400">
+                              {story.title}
+                            </p>
+                            <p className="text-lg font-bold text-custommBlue mt-1">
+                              {story.des}
+                            </p>
+                            <div className="flex gap-2 items-center mt-1">
+                              <Calender />
+                              <p className="text-xs font-thin text-gray-400">
+                                {story.date}
+                              </p>
+                            </div>
+                          </div>
 
-              <h4 className="text-2xl font-semibold text-custommBlue mt-4">
-                Top Stories
-              </h4>
-              {/* Props drilling for all stories */}
-              <div className="mb-0 mt-10">
-                {top_stories_2.map((data, index) => {
-                  return (
-                    <div
-                      className={`flex top-0 bg-gray-100 p-4  ${
-                        index !== top_stories_2.length - 1 ? "mb-1" : ""
-                      }`}
-                      key={index}
-                    >
-                      {/* Tag: number serial  */}
-                      <div className="basis-1/6 mt-1">
-                        <p className="text-xl font-semibold text-gray-400 text-left">
-                          {data.serial_number} .
-                        </p>
-                      </div>
+                          {/* Right image content */}
+                          <div className="basis-1/4 flex justify-center items-center">
+                            <Image
+                              src={story.Image}
+                              alt={story.title}
+                              width={150}
+                              height={150}
+                              className="rounded-full"
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  }
+                </div>
+                {/* Advisement image  */}
+                <div className="flex justify-center">
+                  <Image
+                    src={side_bar_image}
+                    alt="Business"
+                    width={290}
+                    height={236}
+                    className="items-center"
+                  />
+                </div>
 
-                      {/* Tag: description */}
-                      <div className="flex flex-col justify-start top-0 basis-10/12">
-                        <p className="text-lg font-bold text-custommBlue mt-1">
-                          {data.title}
-                        </p>
-                        <div className="flex gap-2 items-center mt-1">
-                          <Calender />
-                          <p className="text-xs font-thin text-gray-400">
-                            {data.date}
+                {/* Bottom section: Head line with title and all stories */}
+
+                <Image
+                  src={Border_line}
+                  alt="Top stories"
+                  width={290}
+                  height={5}
+                  className="w-full mt-10"
+                />
+
+                <h4 className="text-2xl font-semibold text-custommBlue mt-4">
+                  Top Stories
+                </h4>
+                {/* Props drilling for all stories */}
+                <div className="mb-0 mt-10">
+                  {top_stories_2.map((data, index) => {
+                    return (
+                      <div
+                        className={`flex top-0 bg-gray-100 p-4  ${
+                          index !== top_stories_2.length - 1 ? "mb-1" : ""
+                        }`}
+                        key={index}
+                      >
+                        {/* Tag: number serial  */}
+                        <div className="basis-1/6 mt-1">
+                          <p className="text-xl font-semibold text-gray-400 text-left">
+                            {data.serial_number} .
                           </p>
                         </div>
+
+                        {/* Tag: description */}
+                        <div className="flex flex-col justify-start top-0 basis-10/12">
+                          <p className="text-lg font-bold text-custommBlue mt-1">
+                            {data.title}
+                          </p>
+                          <div className="flex gap-2 items-center mt-1">
+                            <Calender />
+                            <p className="text-xs font-thin text-gray-400">
+                              {data.date}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );
