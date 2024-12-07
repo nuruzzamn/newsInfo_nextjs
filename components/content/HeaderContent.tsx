@@ -266,8 +266,122 @@ const UpperContent = () => {
             </div>
           </div>
 
-          {/* Tag: Politics  */}
+          {/* Tag: Sports post */}
+          <div className="mt-4">
+            {/* Title and title divider line  */}
+            <div className="flex gap-2 items-center py-5">
+              <h1 className="text-2xl font-semibold text-custommBlue">
+                Today’s Hot Spot
+              </h1>
+              <div className="">
+                {/* <LongBorder /> */}
+                <Image
+                  src={Border_line}
+                  alt="Top stories"
+                  width={290}
+                  height={5}
+                  className="w-full"
+                />
+              </div>
+            </div>
 
+            {/* post details */}
+            <div className="flex justify-between gap-3 pr-4">
+              {/* post card 1  */}
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <Image
+                  src={content_business_image}
+                  alt="Business"
+                  width={288}
+                  height={180}
+                  className="w-full"
+                />
+                <div className="p-4">
+                  <p className="text-xs font-bold text-gray-400">Business</p>
+                  <h1 className="text-sm font-thin text-gray-600 mt-2">
+                    A Pragmatist’s Guide To Their Lean User Research
+                  </h1>
+
+                  {/* bottom admin and date icon row */}
+                  <div className="flex justify-start gap-3 mt-2">
+                    {/* for admin icon */}
+                    <div className="flex items-center gap-1">
+                      <SignIn />
+                      <p className="text-xs text-gray-500">By Admin</p>
+                    </div>
+
+                    {/* for date icon */}
+                    <div className="flex items-center gap-2">
+                      <Calender />
+                      <p className="text-xs text-gray-500">November 5, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* post card 2  */}
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <Image
+                  src={content_tech_image}
+                  alt="Tech"
+                  width={288}
+                  height={180}
+                  className="w-full"
+                />
+                <div className="p-4">
+                  <p className="text-xs font-bold text-gray-400">Tech</p>
+                  <h1 className="text-sm font-thin text-gray-600 mt-2">
+                    A Pragmatist’s Guide To Their Lean User Research
+                  </h1>
+
+                  {/* bottom admin and date icon row */}
+                  <div className="flex justify-start gap-3 mt-2">
+                    {/* for admin icon */}
+                    <div className="flex items-center gap-1">
+                      <SignIn />
+                      <p className="text-xs text-gray-500">By Admin</p>
+                    </div>
+
+                    {/* for date icon */}
+                    <div className="flex items-center gap-2">
+                      <Calender />
+                      <p className="text-xs text-gray-500">November 5, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* post card 3  */}
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <Image
+                  src={content_business_image}
+                  alt="Business"
+                  width={288}
+                  height={180}
+                  className="w-full"
+                />
+                <div className="p-4">
+                  <p className="text-xs font-bold text-gray-400">Business</p>
+                  <h1 className="text-sm font-thin text-gray-600 mt-2">
+                    A Pragmatist’s Guide To Their Lean User Research
+                  </h1>
+
+                  {/* bottom admin and date icon row */}
+                  <div className="flex justify-start gap-3 mt-2">
+                    {/* for admin icon */}
+                    <div className="flex items-center gap-1">
+                      <SignIn />
+                      <p className="text-xs text-gray-500">By Admin</p>
+                    </div>
+
+                    {/* for date icon */}
+                    <div className="flex items-center gap-2">
+                      <Calender />
+                      <p className="text-xs text-gray-500">November 5, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Right section: Right sidebar top stories */}
