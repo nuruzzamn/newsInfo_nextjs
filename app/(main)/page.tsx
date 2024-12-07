@@ -5,9 +5,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+    {/* Top section: Navbar  */}
       <Navbar />
-
-      <div className="max-w-7xl px-6 flex items-center mx-auto">
+      {/* Middle section: Main content  */}
+      <div className="max-w-7xl flex items-center mx-auto">
         <Content />
       </div>
     </>
