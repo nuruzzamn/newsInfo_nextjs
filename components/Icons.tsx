@@ -203,7 +203,7 @@ export const LongBorder: React.FC = () => (
       width="11"
       height="7"
     >
-      <g clip-path="url(#clip0_4_4613)">
+      <g clipPath="url(#clip0_4_4613)">
         <path
           d="M40.0801 0.879883H46.0801L42.0801 6.87988H36.0801L40.0801 0.879883Z"
           fill="black"
@@ -242,6 +242,54 @@ export const UpperArrow: React.FC = () => (
   </svg>
 );
 
+// RightArrowButton
+export const RightArrowButton: React.FC = () => (
+  <svg
+    width="36"
+    height="37"
+    viewBox="0 0 36 37"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="0.5"
+      y="0.660156"
+      width="35"
+      height="35"
+      rx="3.5"
+      stroke="#CFCFCF"
+    />
+    <path
+      d="M17.2465 12.7422L17.848 12.1406C18.1215 11.8945 18.5316 11.8945 18.7777 12.1406L24.1098 17.4453C24.3559 17.7188 24.3559 18.1289 24.1098 18.375L18.7777 23.707C18.5316 23.9531 18.1215 23.9531 17.848 23.707L17.2465 23.1055C17.0004 22.832 17.0004 22.4219 17.2465 22.1484L20.5551 19.0039H12.7074C12.3246 19.0039 12.0512 18.7305 12.0512 18.3477V17.4727C12.0512 17.1172 12.3246 16.8164 12.7074 16.8164H20.5551L17.2465 13.6992C17.0004 13.4258 16.973 13.0156 17.2465 12.7422Z"
+      fill="#F4796C"
+    />
+  </svg>
+);
+
+// LeftArrowButton
+export const LeftArrowButton: React.FC = () => (
+  <svg
+    width="36"
+    height="37"
+    viewBox="0 0 36 37"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="0.5"
+      y="0.660156"
+      width="35"
+      height="35"
+      rx="3.5"
+      stroke="#CFCFCF"
+    />
+    <path
+      d="M19.0785 23.1055L18.477 23.707C18.2035 23.9531 17.7934 23.9531 17.5473 23.707L12.2426 18.375C11.9691 18.1289 11.9691 17.7188 12.2426 17.4727L17.5473 12.1406C17.7934 11.8945 18.2309 11.8945 18.477 12.1406L19.0785 12.7422C19.352 13.0156 19.3246 13.4258 19.0785 13.6992L15.7699 16.8164H23.6449C24.0004 16.8164 24.3012 17.1172 24.3012 17.4727V18.3477C24.3012 18.7305 24.0004 19.0039 23.6449 19.0039H15.7699L19.0785 22.1484C19.3246 22.4219 19.352 22.832 19.0785 23.1055Z"
+      fill="#F4796C"
+    />
+  </svg>
+);
+
 const Icons = {
   Calender,
   SignIn,
@@ -251,6 +299,8 @@ const Icons = {
   Clock,
   LongBorder,
   UpperArrow,
+  RightArrowButton,
+  LeftArrowButton,
 };
 
 export default Icons;

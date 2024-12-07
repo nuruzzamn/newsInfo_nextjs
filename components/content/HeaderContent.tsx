@@ -10,7 +10,9 @@ import advertisement14 from "@/public/content/advertisement14.jpg";
 import {
   Calender,
   Clock,
+  LeftArrowButton,
   LongBorder,
+  RightArrowButton,
   SignIn,
   UpperArrow,
 } from "@/components/Icons";
@@ -23,7 +25,7 @@ import Link from "next/link";
 const UpperContent = () => {
   return (
     <>
-      {/* main content  */}
+      {/* Section: main content */}
       <div className="flex">
         {/* Left section:left sidebar and hero content 75% */}
         <section>
@@ -512,7 +514,7 @@ const UpperContent = () => {
         </section>
       </div>
 
-      {/* Tag: advertisement for travel agency */}
+      {/* Section: advertisement for travel agency */}
       <Link href="">
         <Image
           src={advertisement14}
@@ -523,6 +525,27 @@ const UpperContent = () => {
           priority
         />
       </Link>
+
+      {/* Section: Editors' Picks */}
+      <div className="bg-[#F9F9F9]">
+        <div className="max-w-7xl px-6 mx-auto py-20">
+          {/* title  */}
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-semibold text-custommBlue">
+              Editors' Picks
+            </h1>
+            <div className="flex items-center gap-3">
+              <button>
+                <LeftArrowButton />
+              </button>
+
+              <button>
+                <RightArrowButton />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

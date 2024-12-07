@@ -29,7 +29,7 @@ const Drivider_line = () => {
           width="10"
           height="7"
         >
-          <g clip-path="url(#clip0_4_4791)">
+          <g clipPath="url(#clip0_4_4791)">
             <path d="M40 0.5H46L42 6.5H36L40 0.5Z" fill="black" />
           </g>
         </mask>
