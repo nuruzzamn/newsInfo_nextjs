@@ -1,6 +1,6 @@
 import React from "react";
 // import UpperContent from "./primary-content/UpperContent";
-import UpperContent from "./primary-content/UpperContent/index";
+import UpperContent from "./HeaderContent";
 import MiddleContent from "./primary-content/MiddleContent";
 import DownContent from "./primary-content/DownContent";
 
