@@ -1,5 +1,5 @@
 import Content from "@/components/content";
-import Navbar from "@/components/navbar/MainNavbar";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
