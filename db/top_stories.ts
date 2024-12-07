@@ -65,11 +65,11 @@ const top_stories_2: Story_2[] = [
     title: "Making S WAI-ARIA A Comprehensive Guide",
     date: "27 August, 2024",
   },
-  {
-    serial_number: "5",
-    title: "UX Checklists For Interface Designers",
-    date: "27 August, 2024",
-  },
+  // {
+  //   serial_number: "5",
+  //   title: "UX Checklists For Interface Designers",
+  //   date: "27 August, 2024",
+  // },
 ];
 
 const politics_post: Story_2[] = [

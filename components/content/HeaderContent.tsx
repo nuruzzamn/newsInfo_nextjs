@@ -5,6 +5,8 @@ import politics_post1 from "@/public/content/politics_post01.jpg";
 import main_hero_content_img from "@/public/main-hero-content-img.jpg";
 import content_business_image from "@/public/content-business.jpg";
 import advertisingTravelAgency from "@/public/content/advertisement.jpg.jpg";
+import advertisement14 from "@/public/content/advertisement14.jpg";
+
 import {
   Calender,
   Clock,
@@ -509,6 +511,18 @@ const UpperContent = () => {
           </div>
         </section>
       </div>
+
+      {/* Tag: advertisement for travel agency */}
+      <Link href="">
+        <Image
+          src={advertisement14}
+          alt="Business"
+          width={288}
+          height={180}
+          className="flex justify-center min-w-full px-20 py-12"
+          priority
+        />
+      </Link>
     </>
   );
 };
