@@ -26,7 +26,7 @@ const UpperContent = () => {
   return (
     <>
       {/* Section: main content */}
-      <div className="flex">
+      <div className="flex w-full">
         {/* Left section:left sidebar and hero content 75% */}
         <section>
           {/* Tag:left sidebar and hero content */}
