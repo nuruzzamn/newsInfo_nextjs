@@ -7,13 +7,13 @@ const Navbar = () => {
   return (
     <div className="">
       {/* Header navbar: social media link, calender, logo, sign button, subscribe button */}
-      <div className="max-w-7xl px-6 mx-auto">
+      <div className="max-w-7xl px-4 mx-auto">
         {/* Top section: social media link  */}
         <div></div>
         {/* Middle section: calender, logo, sign button, subscribe button */}
         <div className="flex h-32 justify-between items-center">
           {/* left section: calender, logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <Calender />
             <p className="text-xs font-thin text-gray-400">November 5, 2024</p>
             <Link href="/">
@@ -43,7 +43,7 @@ const Navbar = () => {
       <hr className="border-gray-300 border-t-2 w-full" />
 
       {/* Main navbar: menu button, menu lists, search bar */}
-      <div className="max-w-7xl px-6 mx-auto">
+      <div className="max-w-7xl px-4 mx-auto">
         <div className="flex justify-between">
           {/* Left section: Home menu */}
           <Link href="/" className="flex pl-2">
